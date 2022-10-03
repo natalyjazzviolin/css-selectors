@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #B7FDFE;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    padding-top: 10vh;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+header, nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+li {
+    padding: 20px 30px;
+    border-radius: 10px;
+
+    background-color: white;
+    border: black solid 3px;
+    box-shadow: -10px 8px #A80874;
+    font-weight: 500;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    background-color: black;
+    color: #d73aa3;
+}
+
+a:hover{
+    text-decoration: wavy underline #A80874;
+    text-underline-offset: 5px;
+}
+
+li:nth-child(odd) > a:hover {
+    text-decoration: overline underline #FF715B;
+}
+
+li:has(a:hover) {
+    box-shadow: -10px 8px #F9CB40;
+}
+
+li:nth-child(even):has(a:hover) {
+    box-shadow: -10px 8px #FF715B;
+}
+
+li:not(:first-child) {
+    margin-top: 2vh;
+}
+
