@@ -18,8 +18,19 @@ header {
     position: absolute;
     top: 0;
     padding-top: 10vh;
-    font-size: 2rem;
     font-weight: 700;
+}
+
+header:first-child::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 5px;
+    border-radius: 2px;
+    background: rgb(183,253,254);
+    background: linear-gradient(97deg, rgba(183,253,254,1) 4%, rgba(255,113,91,1) 53%, rgba(249,203,64,1) 100%);
 }
 
 header, nav {
