@@ -39,23 +39,33 @@ main {
 
 
 section {
-    background-color: whitesmoke;
     width: 60vw;
+    max-width: 300px;
     height: 18vh;
     margin-bottom: 20px;
     border-radius: 10px;
     border: black solid 3px;
     box-shadow: -10px 8px var(--flirt);
-    font-family: 'Ubuntu', sans-serif;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
 footer {
     display: flex;
     justify-content: space-between;
     padding: 5vh 10vh;
+}
+
+section {
+    background-color: whitesmoke;
+}
+
+.sunglow {
+    background-color: var(--sunglow);
+}
+
+#bittersweet {
+    background-color: var(--bittersweet);
 }
