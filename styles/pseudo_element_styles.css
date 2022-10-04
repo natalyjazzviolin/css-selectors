@@ -1,0 +1,32 @@
+:root {
+    --flirt: #A80874;
+    --celeste: #B7FDFE;
+    --bittersweet: #FF715B;
+    --bitter-lime: #BCED09;
+    --sunglow: #F9CB40;
+    --turquoise-blue: #00FFE7;
+    --crayola: #1E91D6;
+    --purple: #C200FB;
+    --olivine: #8CB369;
+    --emerald: #23CE6B;
+}
+
+section {
+    height: 30vh;
+    flex-direction: column;
+    gap: 20px;
+}
+
+li::marker {
+    content: '🎃 ';
+    font-size: 1.2em;
+}
+
+li::selection {
+    color:var(--purple);
+    background-color: var(--bitter-lime);
+}
+
+li::first-letter {
+    font-size: 1.3rem;
+}
