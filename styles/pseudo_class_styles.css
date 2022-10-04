@@ -1,0 +1,26 @@
+:root {
+    --flirt: #A80874;
+    --celeste: #B7FDFE;
+    --bittersweet: #FF715B;
+    --bitter-lime: #BCED09;
+    --sunglow: #F9CB40;
+    --turquoise-blue: #00FFE7;
+    --crayola: #1E91D6;
+    --purple: #C200FB;
+    --olivine: #8CB369;
+    --emerald: #23CE6B;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section:has(input[type="checkbox"]:checked) {
+    background-color: var(--sunglow);
+}
+
+h1:hover {
+    color: var(--purple);
+}
