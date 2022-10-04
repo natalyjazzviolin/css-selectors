@@ -15,6 +15,17 @@ select {
     margin-bottom: 5vh;
 }
 
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: solid black 2px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+input:focus {
+    outline: 3px solid var(--sunglow);
+}
+
 input[placeholder] {
     background-color: var(--bitter-lime);
 }
