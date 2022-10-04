@@ -1,0 +1,16 @@
+:root {
+    --flirt: #A80874;
+    --celeste: #B7FDFE;
+    --bittersweet: #FF715B;
+    --bitter-lime: #BCED09;
+    --sunglow: #F9CB40;
+    --turquoise-blue: #00FFE7;
+    --crayola: #1E91D6;
+    --purple: #C200FB;
+    --olivine: #8CB369;
+    --emerald: #23CE6B;
+}
+
+section p {
+    background-color: var(--sunglow);
+}
