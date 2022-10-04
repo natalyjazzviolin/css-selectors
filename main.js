@@ -14,7 +14,7 @@ if(url.includes('type')) {
     );
     console.table(selectors);
     console.log(
-      "\n%cTry selecting the first card by its type and changing the color. Copy the line beow and paste it in the DevTools terminal:\n",
+      "\n%cTry selecting the first card by its type and changing the color. Copy the line below and paste it in the DevTools terminal:\n",
       "font-weight: bold; font-size: .8rem;color: #0C4767;"
     );
     console.log(
@@ -73,12 +73,49 @@ if(url.includes('type')) {
     );
     console.table(selectors);
 }else if(url.includes('pseudo-element')) {
-    console.log("pseudo-elements!");
+    selectors.A = new Selector("::marker", "li::marker");
+    selectors.B = new Selector("::selection", "li::selection");
+    selectors.C = new Selector("::first-letter", "li::first-letter");
+    console.log(
+      `\n%cPseudo-Elements`,
+      "color:#0C4767; background: linear-gradient(97deg, #F9CB40 4%, #FF715B 53%, #B7FDFE 100%); font-size:1.5rem; padding:0.15rem 0.25rem; margin: 1rem auto; font-family: Rockwell; border: 2px solid #0dd8d8; border-radius: 4px;font-weight: bold; text-shadow: 1px 1px 1px #00af87bf;"
+    );
+    console.log(
+      `\n%cPseudo-elements are used when you want to add to an element, or style a part of it. They can only be used once and have to be defined after the main selector.\n\nPseudo-elements are often used in CSS art!`,
+      "font-weight: bold; font-size: .8rem;color: #0C4767;"
+    );
+    console.log(
+      "\n%cI've used three pseudo-elements on this page, they're listed bellow. A very useful pseudo-element that enables us to use variables in CSS is :root, and if you check - you'll see that it's used all over this little site 💅",
+      "font-weight: bold; font-size: .8rem;color: #0C4767;"
+    );
+    console.table(selectors);
 }else if(url.includes('combinator')) {
-    console.log("combinators!");
+    selectors.A = new Selector(
+      "' ' - descendants of the first element.",
+      "section div"
+    );
+    selectors.B = new Selector(
+      "> - direct children of the first element",
+      "div > p"
+    );
+    selectors.C = new Selector("~ - siblings", "p ~ p");
+    selectors.D = new Selector("+ - adjacent siblings", "p + span");
+    console.log(
+      `\n%cCombinators`,
+      "color:#0C4767; background: linear-gradient(97deg, #F9CB40 4%, #FF715B 53%, #B7FDFE 100%); font-size:1.5rem; padding:0.15rem 0.25rem; margin: 1rem auto; font-family: Rockwell; border: 2px solid #0dd8d8; border-radius: 4px;font-weight: bold; text-shadow: 1px 1px 1px #00af87bf;"
+    );
+    console.log(
+      `\n%cCombinators allow us to specify exactly which elements to style depending on their parent/child/sibling relationship.`,
+      "font-weight: bold; font-size: .8rem;color: #0C4767;"
+    );
+    console.log(
+      "\n%cMake sure to inspect the card in the middle of the page to see why the three text blocks inside it are different colors!",
+      "font-weight: bold; font-size: .8rem;color: #0C4767;"
+    );
+    console.table(selectors);
 } else {
     console.log(
-      `\n%cHi!    👋`,
+      `\n%cHello!    👋`,
       "color:#0C4767; background: linear-gradient(97deg, #F9CB40 4%, #FF715B 53%, #B7FDFE 100%); font-size:1.5rem; padding:0.15rem 0.25rem; margin: 1rem auto; font-family: Rockwell; border: 2px solid #0dd8d8; border-radius: 4px;font-weight: bold; text-shadow: 1px 1px 1px #00af87bf;"
     );
     console.log(
