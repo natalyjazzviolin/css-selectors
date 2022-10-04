@@ -43,6 +43,7 @@ input[pattern$="ty"] {
 
 input[pattern*="bamboo"] {
     background-color: var(--olivine);
+    color: whitesmoke;
 }
 
 input[pattern*="JavaScript" i] {
