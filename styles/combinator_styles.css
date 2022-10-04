@@ -11,6 +11,48 @@
     --emerald: #23CE6B;
 }
 
-section p {
+section {
+    height: 30vh;
+}
+
+section div {
+    height: 20vh;
+    width: 20vw;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+p {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+span {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+section div {
     background-color: var(--sunglow);
+}
+
+div > p {
+    background-color: var(--bittersweet);
+}
+
+p ~ p {
+    background-color: var(--emerald);
+}
+
+p + p {
+    background-color: var(--purple);
+}
+
+p + span {
+    background-color: var(--purple);
 }
