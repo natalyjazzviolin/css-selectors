@@ -45,12 +45,33 @@ if(url.includes('type')) {
       "font-weight: bold; font-size: .8rem;color: #0C4767;"
     );
     console.log(
-      "\n%cTry typing in the phrases in the example column and see what happens 😉\n",
+      "\n%cTry typing in the phrases from the example column and see what happens 😉\n",
       "font-weight: bold; font-size: .8rem;color: #0C4767;"
     );
-    console.table(selectors)
+    console.table(selectors);
 }else if(url.includes('pseudo-clas')) {
-    console.log("pseudo-class!");
+    selectors.A = new Selector(
+      ":hover",
+      'h1:hover'
+    );
+    selectors.B = new Selector(":checked", 'input[type="checkbox"]:checked');
+    selectors.C = new Selector(
+      ":has()",
+      'section:has(input[type="checkbox"]:checked)'
+    );
+    console.log(
+      `\n%cPseudo-Classes`,
+      "color:#0C4767; background: linear-gradient(97deg, #F9CB40 4%, #FF715B 53%, #B7FDFE 100%); font-size:1.5rem; padding:0.15rem 0.25rem; margin: 1rem auto; font-family: Rockwell; border: 2px solid #0dd8d8; border-radius: 4px;font-weight: bold; text-shadow: 1px 1px 1px #00af87bf;"
+    );
+    console.log(
+      `\n%cPseudo-classes are incredibly helpful when styling elements in altered states.\n\nA common use case is for hovering over elements. Try hovering over the title and see how the color changes.`,
+      "font-weight: bold; font-size: .8rem;color: #0C4767;"
+    );
+    console.log(
+      "\n%cAnother great opportunity to use a pseudo-class is when you check a checkbox. Try it out! On this page I'm nesting the :checked class within a new one - :has().\n\nIf you are using a browser that supports it (all except Firefox), you should see the card turn orange! \n",
+      "font-weight: bold; font-size: .8rem;color: #0C4767;"
+    );
+    console.table(selectors);
 }else if(url.includes('pseudo-element')) {
     console.log("pseudo-elements!");
 }else if(url.includes('combinator')) {
